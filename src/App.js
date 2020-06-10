@@ -66,8 +66,10 @@ export default function App() {
 			) : (
 				<ul className='list-reset leading-normal'>
 					{results.map(result => (
-						<li key={result.objectID} className='text-indigo-dark hover:text-indigo-darkest'>
-							<a href={result.url}>-{result.title} </a>
+						<li key={result.objectID}>
+							<a className='text-indigo-dark hover:text-indigo-darkest' href={result.url}>
+								- {result.title}
+							</a>
 						</li>
 					))}
 				</ul>
