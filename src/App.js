@@ -17,7 +17,7 @@ export default function App() {
 		// 	setResults(response.data.hits)
 		// })
 		//since we want onChange to be called when the param changes put the param(query) in here
-	}, [query])
+	}, [])
 
 	const getResults = async () => {
 		setLoading(true)
